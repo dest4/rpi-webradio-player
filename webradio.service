@@ -1,0 +1,9 @@
+[Unit]
+Description=Webradio player with HTTP interface
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/node /home/pi/webradio/index.js
+
+[Install]
+WantedBy=multi-user.target
